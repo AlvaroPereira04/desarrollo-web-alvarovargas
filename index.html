@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style/style-index.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"> </script>
+  <title>Home de la web, acceso a servicios brindados y a medios de contacto</title>
+  <meta name="description" conten="Asesorate sobre servicios web tales como: Desarrollo Web, Desarrollo de Aplicaciones, Diseño UX/UI o Diseño Gráfico">
+  <meta name="keywords" content="Diseño, Diseño Web, Desarrollo App, Diseño UX/UI, Diseño Gráfico">
+</head>
+
+<body>
+  <main>
+    <!--MENU-->
+    <header>
+      <nav class="navbar navbar-text navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <img src="./img/logo.jpg" width="100" alt="Foto">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 collapse navbar-collapse" id="navbarToggleExternalContent">
+            <li class="nav-item lista1">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item lista1">
+              <a class="nav-link active " href="./pages/quienes-somos.html">Quienes somos</a>
+            </li>
+            <li class="nav-item lista1">
+              <a class="nav-link active" href="./pages/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item lista1">
+              <a class="nav-link active" href="./pages/casos-de-exito.html">Casos exitosos</a>
+            </li>
+            <li class="nav-item lista1">
+              <a class="nav-link active" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <span>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-info" type="submit">Buscar</button>
+            </form>
+          </span>
+        </div>
+      </nav>
+    </header>
+    <!--PRINCIPAL-->
+    <section class="hero">
+      <div>
+        <h1> Tecnologia.network </h1> <!-- Encabezado -->
+        <form class="hero__buttom" action="./pages/contacto.html">
+          <label for="Solicitar asesoramiento"></label>
+          <button class="hero__buttom--pointer btn-contacto" a href="./pages/contacto.html">Solicitar asesoramiento</a></button>
+        </form>
+      </div>
+    </section>
+    <!--TRABAJOS-->
+    <section class="service">
+      <h2 class="service__title">Servicios</h2>
+      <!-- sm: 576px -->
+      <!-- md: 768px -->
+      <!-- lg: 992px -->
+      <div class="row">
+        <article class="boxModel col-sm-12 col-md-6 col-lg-3">
+          <div class="">Desarrollo Web</div>
+        </article>
+        <article class="boxModel col-sm-12 col-md-6 col-lg-3">
+          <div class="">Desarrollo de Aplicaciones</div>
+        </article>
+        <article class="boxModel col-sm-12 col-md-6 col-lg-3">
+          <div class="">Diseño UX/UI</div>
+        </article>
+        <article class="boxModel col-sm-12 col-md-6 col-lg-3">
+          <div class="">Diseño Gráfico</div>
+        </article>
+      </div>
+    </section>
+    <!--NOSOTROS-->
+    <section class="info">
+      <div>
+        <h3 class="info__title">Sobre nosotros</h3>
+        <form class="info__buttom" action="./pages/quienes-somos.html">
+          <label for="Mas sobre nosotros"></label>
+          <button class="hero__buttom--pointer btn-quienes" a href="./pages/quienes-somos.html">Mas sobre nosotros</a></button>
+        </form>
+      </div>
+      <span class="span">
+        <p class="info-grid">
+          Bienvenido a Tecnologia.network, una empresa de software dedicada al desarrollo de software a medida y programación. Proporcionamos a industrias y empresas todo tipo de solución tecnológica avanzada y segura.
+        </p>
+      </span>
+    </section>
+    <footer class="footer">
+      <p>Copyright 2022</p>
+      <p>Síguenos en nuestras redes</a></p>
+      <img src="./img/—Pngtree—social media icons_3557804.png" width="120" alt="redes">
+      <div>
+        <p><a href="./index.html">Volver a Home</a></p>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

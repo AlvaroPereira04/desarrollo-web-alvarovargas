@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px
+}
+
+header nav img {
+    width: 100px
+}
+
+header nav ul {
+    justify-content: center
+}
+
+header nav ul li {
+    font-size: 20px;
+    padding: 0 8px;
+    margin: 0 10px;
+    border-radius: 15px;    
+    font-weight: bold;
+    border: 2px solid darkcyan;
+}
+
+header nav ul li:hover {
+    transform: scale(0.8);
+    transition: all, .5s
+}
+
+footer {
+    font-size: 80%;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px
+}
+
+footer img {
+    margin-top: -20px;
+    margin-bottom: -40px
+}
+
+footer div p a {
+    text-decoration: none;
+    color: #166279
+}
+
+.container-area {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    grid-template-areas: "logo lista lista lista";
+    align-items: center
+}
+
+nav {
+    grid-area: lista
+}
+
+aside {
+    grid-area: logo
+}
+
+.hero { 
+    background-image: url('../img/5065282.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.hero__buttom {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 15px;
+    font-size: 18px;
+    
+}    
+.hero__buttom--pointer { 
+    color: white;
+    font-size: 15px;
+    font-family: "montserrat";
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid darkcyan;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.hero__buttom--pointer:hover {
+    background: darkcyan;        
+}
+
+.hero__buttom--pointer {
+    padding: 10px 50px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:black;
+}
+
+.service {
+    height: 350px;
+    color: #fff;
+    display: grid;
+    padding: 0 50px;
+    background-color: #166279
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin-top: 15px
+}
+
+.service__title {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff
+}
+
+.boxModel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    text-align: center;
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 24px
+}
+
+section div {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 50px
+}
+
+div article:hover {
+    border-radius: 10px;
+    width: 190px;
+    height: 190px;
+    border-color: #008b8b;
+    border-style: outset;
+    background-color: #008b8b;
+    transition: all, 1s
+}
+
+.info {
+    height: 400px;
+    color: #000;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 0 50px;
+    background-color: silver
+}
+
+.info__item--big {
+    grid-area: 1/1/2/2;
+    background-image: linear-gradient(45deg, #406882, #b1d0e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff
+}
+
+.info-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center
+}
+
+.info__title {
+    margin-top: 20px
+}
+
+.info__buttom {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 15px;
+    font-size: 18px
+}
+
+@keyframes move {
+    from {
+        transform: rotateY()
+    }
+
+    to {
+        transform: rotateY(360deg)
+    }
+}
+
+@media(max-width: 1180px) {
+    .lista1 {
+        font-size: 15px;
+        text-align: center
+    }
+}
+
+@media(max-width: 1048px) {
+    header nav div span {
+        display: none
+    }
+
+    .hero__buttom {
+        font-size: 15px
+    }
+
+    .info__buttom {
+        font-size: 15px
+    }
+}
+
+@media(max-width: 967px) {
+    body {
+        font-size: 120%
+    }
+
+    header div aside img {
+        width: 50px
+    }
+
+    header nav ul li a {
+        padding: 8px 12px;
+        margin: 0 10px;
+        font-size: 15px;
+        border-radius: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff
+    }
+
+    .boxModel {
+        background-color: #000;
+        text-align: center;
+        vertical-align: middle;
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+        font-size: 15px
+    }
+
+    footer {
+        font-size: 20px
+    }
+}
+
+@media(max-width: 799px) {
+    body {
+        font-size: 120%
+    }
+
+    header nav {
+        display: none
+    }
+
+    header span {
+        display: block
+    }
+
+    .container-area {
+        display: flex
+    }
+
+    .boxModel {
+        background-color: #000;
+        text-align: center;
+        vertical-align: middle;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        font-size: 12px
+    }
+
+    section span p {
+        margin-left: 20px;
+        font-size: 15px
+    }
+}
+
+@media(max-width: 520px) {
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        margin-top: 15px
+    }
+
+    .info {
+        height: 400px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+        padding: 0 50px;
+        background-color: silver
+    }
+
+    section span p {
+        margin-top: -50px;
+        font-size: 15px
+    }
+
+    footer p {
+        font-size: 10px
+    }
+}
+
+@media(max-width: 370px) {
+    .info {
+        height: 500px
+    }
+
+    .info div h3 {
+        margin-right: 50px
+    }
+
+    .info span p {
+        margin-right: 50px
+    }
+}

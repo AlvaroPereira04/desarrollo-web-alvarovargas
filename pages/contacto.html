@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../style/style-contacto.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"> </script>
+  <title>Realizanos tu consulta, te responderemos a la brevedad!</title>
+  <meta name="description" content="Dejanos tu mensaje o consulta, te vamos a responder a la brevedad para asesorarte!">
+  <meta name="keywords" content="Diseño, Diseño Web, Desarrollo App, Diseño UX/UI, Diseño Gráfico">
+
+</head>
+
+<body>
+  <main>
+    <!--MENU-->
+    <header>
+      <nav class="navbar navbar-text navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <img src="../img/logo.jpg" alt="Foto">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 collapse navbar-collapse" id="navbarToggleExternalContent">
+            <li class="nav-item lista1">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item lista1">
+              <a class="nav-link active " href="./quienes-somos.html">Quienes somos</a>
+            </li>
+            <li class="nav-item lista1">
+              <a class="nav-link active" href="./servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item lista1">
+              <a class="nav-link active" href="./casos-de-exito.html">Casos de éxito</a>
+            </li>
+            <li class="nav-item lista1">
+              <a class="nav-link active" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <span>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-info" type="submit">Buscar</button>
+            </form>
+          </span>
+        </div>
+      </nav>
+    </header>
+    <!--PRINCIPAL-->
+    <section class="hero">
+      <div>
+        <h2 class="hero__text">Dejanos tu consulta</h2> <!--Encabezado-->
+        <h3>Te contactaremos a la brevedad</h3> <!--Encabezado-->
+      </div>
+    </section>
+    <!--FORM-->
+    <section class="contacto2">
+      <form action="contacto.html">
+        <div class="contacto2-grid">
+          <label class="contacto2-grid__flex" for="nombre">Nombre:</label>
+          <!--etiqueta nombre-->
+          <input class="contacto2-grid__flex" type="text" name="nombre" id="nombre">
+          <!--txtbox nombre-->
+          <label class="contacto2-grid__flex" for="mail">Email:</label>
+          <!--etiqueta e-mail-->
+          <input class="contacto2-grid__flex" type="email" name="mail" id="mail">
+          <!--txtbox e-mail-->
+          <label class="contacto2-grid__flex" for="telefono">Teléfono:</label>
+          <!--etiqueta teléfono-->
+          <input class="contacto2-grid__flex" type="tel" name="telefono" id="telefono">
+          <!--txtbox teléfono-->
+          <label class="contacto2-grid__flex" for="empresa">Empresa:</label>
+          <!--etiqueta empresa-->
+          <input class="contacto2-grid__flex" type="text" name="empresa" id="empresa">
+          <!--txtbox empresa-->
+          <label class="contacto2-grid__flex" for="pais">País:</label>
+          <!--etiqueta país-->
+          <input class="contacto2-grid__flex" type="text" name="pais" id="pais">
+          <!--etiqueta tipo-->
+          <label class="contacto2-grid__flex" for="servicio">Tipo de servicio:</label>
+          <select class="contacto2-grid__flex" name="servicio" id="servicio">
+            <!--checkbox tipo-->
+            <OPTION VALUE="programador" SELECTED> Desarrollo Web </OPTION>
+            <OPTION VALUE="diseñador"> Desarrollo App </OPTION>
+            <OPTION VALUE="lider"> Diseño UX/UI </OPTION>
+            <OPTION VALUE="lider"> Diseño Gráfico </OPTION>
+          </SELECT>
+        </div>
+      </form>
+    </section>
+    <section class="contacto">
+      <div>
+        <form class="hero__buttom" action="./contacto.html">
+          <label for="Solicitar asesoramiento"></label>
+          <button class="hero__buttom--pointer" a href="./contacto.html">Solicitar asesoramiento</a></button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright 2022</p>
+      <p>Síguenos en nuestras redes</a></p>
+      <img src="../img/—Pngtree—social media icons_3557804.png" width="120" alt="redes">
+      <div>
+        <p><a href="../index.html">Volver a Home</a></p>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>

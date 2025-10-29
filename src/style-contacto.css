@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px
+}
+
+.btn-contacto {
+    background-color: #000
+}
+
+.btn-quienes {
+    background-color: gray
+}
+
+header nav img {
+    width: 100px
+}
+
+header nav ul {
+    justify-content: center
+}
+
+header nav ul li {
+    font-size: 20px;
+    padding: 0 8px;
+    margin: 0 10px;
+    border-radius: 15px;    
+    font-weight: bold;
+    border: 2px solid darkcyan;
+}
+
+header nav ul li:hover {
+    transform: scale(0.8);
+    transition: all, .5s
+}
+
+footer {
+    font-size: 80%;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px
+}
+
+footer img {
+    margin-top: -20px;
+    margin-bottom: -40px
+}
+
+footer div p a {
+    text-decoration: none;
+    color: #166279
+}
+
+.container-area {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    grid-template-areas: "logo lista lista lista";
+    align-items: center
+}
+
+nav {
+    grid-area: lista
+}
+
+aside {
+    grid-area: logo
+}
+
+.hero {
+    background-image: url("../img/5065282.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    text-align: center
+}
+
+.hero__buttom {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 15px
+}
+
+.hero__buttom--pointer {
+    padding: 10px 50px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000
+}
+
+.contacto {
+    height: 200px;
+    color: #000;
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px
+}
+
+.contacto-grid__text {
+    text-align: center
+}
+
+.contacto2 {
+    height: 300px;
+    color: #fff;
+    display: grid;
+    padding: 0 50px;
+    background-color: #166279
+}
+
+.contacto2-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
+    margin-top: 30px
+
+}
+
+.contacto2-grid__flex {
+    margin: 5px;
+    display: block;
+    border-radius: 8px;
+}
+
+section form div input {
+    font-family: sans-serif;
+    font-size: 20px;
+    
+}
+
+section form div select {
+    margin: 0 20px;
+    font-family: sans-serif;
+    font-size: 14px
+}
+
+@media(max-width: 1048px) {
+    header nav div span {
+        display: none
+    }
+
+    .hero__buttom {
+        font-size: 15px
+    }
+
+    .info__buttom {
+        font-size: 15px
+    }
+}
+
+@media(max-width: 978px) {
+    body {
+        font-size: 120%
+    }
+
+    header div aside img {
+        width: 50px
+    }
+
+    header nav ul li a {
+        padding: 8px 12px;
+        margin: 0 10px;
+        font-size: 15px;
+        border-radius: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff
+    }
+
+    footer {
+        font-size: 20px;
+        text-align: center
+    }
+}
+
+@media(max-width: 799px) {
+    body {
+        font-size: 120%
+    }
+
+    header nav {
+        display: none
+    }
+
+    header span {
+        display: block
+    }
+
+    .container-area {
+        display: flex
+    }
+
+    .contacto2 {
+        font-size: 16px
+    }
+}
+
+@media(max-width: 530px) {
+    .contacto2 {
+        height: 600px;
+        
+    }
+
+    .contacto2-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        width: auto;
+    }
+
+    footer p {
+        font-size: 10px
+    }
+}
